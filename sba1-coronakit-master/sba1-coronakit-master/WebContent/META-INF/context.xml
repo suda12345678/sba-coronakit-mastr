@@ -1,0 +1,27 @@
+
+<Context>
+<Resource
+    name="jdbc/myDB"
+    auth="Container"
+    type="javax.sql.DataSource"
+    factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+    testWhileIdle="true"
+    testOnBorrow="true"
+    testOnReturn="false"
+    validationQuery="SELECT 1"
+    validationInterval="30000"
+    timeBetweenEvictionRunsMillis="30000"
+    maxActive="20"
+    minIdle="3"
+    maxIdle="15"
+    maxWait="10000"
+    initialSize="3"
+    removeAbandonedTimeout="60"
+    removeAbandoned="true"
+    logAbandoned="true"
+    minEvictableIdleTimeMillis="30000"
+    username="root"
+    password="verizon@123"
+    driverClassName="com.mysql.cj.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/coronakitdb"/>
+</Context>
